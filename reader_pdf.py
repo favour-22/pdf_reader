@@ -6,14 +6,14 @@ import json
 nlp = spacy.load('en_core_web_sm')
 
 # Open the PDF file in binary mode
-with open('resume.pdf', 'rb') as pdf_file:
+with open('sample_input.pdf', 'rb') as pdf_file:
     # Create a PDF reader object
-    pdf_reader = PyPDF2.PdfFileReader(pdf_file)
+    pdf_reader = PyPDF2.PdfReader(pdf_file)
 
     # Extract the text from each page of the PDF file
     text = ''
-    for page_num in range(pdf_reader.getNumPages()):
-        page = pdf_reader.getPage(page_num)
+    for page in pdf_reader.pages:
+        page = pdf_reader.pages[page_index]
         text += page.extractText()
 
     # Clean up the text

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import spacy
 import fitz
 import re
@@ -7,19 +8,19 @@ nlp = spacy.load('en_core_web_sm')
 
 # Open the PDF file in binary mode
 with fitz.open('sample_input.pdf') as pdf_file:
-    # Extract the text from each page of the PDF file
+    # Extracting the text from each page of the PDF file
     text = ''
     for page in pdf_file:
         text += page.get_text()
 
-    # Clean up the text
+    # Cleaning  up the text
     text = ' '.join(text.split())
 
-    # Use Spacy to parse the text and extract relevant information
+    # Using  Spacy to parse the text and extract relevant information
     doc = nlp(text)
     data = {}
 
-    # Extract name
+    # Extracting the  name of the individual 
     name = ''
     for ent in doc.ents:
         if ent.label_ == 'PERSON':
@@ -35,7 +36,7 @@ with fitz.open('sample_input.pdf') as pdf_file:
         age = match.group(0)
     data['age'] = age if age else None
 
-    # Extract contact information
+    # Extracting  contact information
     contact = {}
     email_re = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
     phone_re = re.compile(r'\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b')
@@ -55,7 +56,7 @@ with fitz.open('sample_input.pdf') as pdf_file:
                 contact['address'] = match.group(0)
     data['contact'] = contact if contact else None
 
-    # Extract skills
+    # Extracting  skills if available 
     programming_languages = []
     frontend_technologies = []
     backend_technologies = []
@@ -82,7 +83,7 @@ with fitz.open('sample_input.pdf') as pdf_file:
     data['databases'] = databases if databases else None
     data['other_skills'] = other_skills if other_skills else None
 
-    # Extract honors and awards
+    # Extracting  honors and awards if available
     honors_and_awards = []
     honors_re = re.compile(r'\b\d{4}\b(.+)')
     matches = honors_re.findall(text)
@@ -90,7 +91,7 @@ with fitz.open('sample_input.pdf') as pdf_file:
         honors_and_awards.append(match.strip())
     data['honors_and_awards'] = honors_and_awards if honors_and_awards else None
 
-    # Extract extracurricular activities
+    # Extracting extracurricular activities if available
     extracurricular_activities = []
     activities_re = re.compile(r'Contributor in (.+?)\s(.+?)\s(.+?)\s·\sRésumé the extraction of this in the skills')
     matches = activities_re.findall(text)
@@ -103,7 +104,7 @@ with fitz.open('sample_input.pdf') as pdf_file:
         extracurricular_activities.append(activity)
     data['extracurricular_activities'] = extracurricular_activities if extracurricular_activities else None
 
-    # Write the extracted information to a JSON file
+    # Passing the extracted information to a JSON file
     with open('resume_info.json', 'w') as json_file:
         json.dump(data, json_file, indent=4)
 

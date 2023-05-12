@@ -1,37 +1,15 @@
 {
-    "name": "Omkar Pathak SOFTWARE",
+    "name": "Stored Procedures",
     "age": null,
-    "skills": null,
-    "experience": [
-        {
-            "employer": "June",
-            "start_year": "2018",
-            "end_year": "2018"
-        },
-        {
-            "employer": "October",
-            "start_year": "2017",
-            "end_year": "2018"
-        },
-        {
-            "employer": "July",
-            "start_year": "2017",
-            "end_year": "2017"
-        },
-        {
-            "employer": "June",
-            "start_year": "2017",
-            "end_year": "2017"
-        },
-        {
-            "employer": "October",
-            "start_year": "2017",
-            "end_year": "2018"
-        },
-        {
-            "employer": "January",
-            "start_year": "2017",
-            "end_year": "2017"
-        }
-    ]
+    "contact": null,
+    "programming_languages": null,
+    "frontend_technologies": null,
+    "backend_technologies": null,
+    "operating_systems": null,
+    "databases": null,
+    "other_skills": null,
+    "honors_and_awards": [
+        ". Act as a Point of Contact in Data Interoperability, Analytics and BI and Production Support issue resolution. Experience in Developing Performance Dashboards, Score cards, Metrics, what if analysis, Prompts, Drills. Reports/Dashboards for all the functional areas including Finance, Pricing, Purchasing and Sales/Marketing. Willing to relocate: Anywhere WORK EXPERIENCE Software Engineer Microsoft - hyderbad, Telangana - December 2015 to Present 1. Microsoft Rewards Live dashboards: Description: - Microsoft rewards is loyalty program that rewards Users for browsing and shopping online. Microsoft Rewards members can earn points when searching with Bing, browsing with Microsoft Edge and making purchases at the Xbox Store, the Windows Store and the Microsoft Store. Plus, user can pick up bonus points for taking daily quizzes and tours on the Microsoft rewards website. Rewards live dashboards gives a live picture of usage world-wide and by markets like US, Canada, Australia, new user registration count, top/bottom performing rewards offers, orders stats and weekly trends of user activities, orders and new user registrations. the PBI tiles gets refreshed in different frequencies starting from 5 seconds to 30 minutes. Technology/Tools used \u2022 Event hub, stream analytics and Power BI. Responsibilities \u2022 Created stream analytics jobs to process event hub data \u2022 Created Power BI live dashboard to show live usage traffic, weekly trends, cards, charts to show top/bottom 10 offers and usage metrics. 2. Microsoft Rewards Data Insights: Description: - Microsoft rewards is loyalty program that rewards Users for browsing and shopping online. Microsoft Rewards members can earn points when searching with Bing, browsing with Microsoft Edge and making purchases at the Xbox Store, the Windows Store and the Microsoft Store. Plus, user can pick up bonus points for taking daily quizzes and tours on the Microsoft rewards website. Rewards data insights is data analytics and reporting platform, processes 20 million users daily activities and redemption across different markets like US, Canada, Australia. Technology/Tools used \u2022 Cosmos (Microsoft big-data platform), c#, X-flow job monitoring, Power BI. Responsibilities \u2022 Created big data scripts in cosmos \u2022 C# data extractors, processors and reducers for data transformation \u2022 Power BI dashboards 3. End to end tracking Tool: Description: - This is real-time Tracking tool to track different business transactions like order, order response, functional acknowledgement, invoice flowing inside ICOE. It gives flexibility to customers to track their transactions and appropriate error information in-case of any failure. Based on resource based access control the tool gives flexibility to end user to perform different actions like view transactions, search based on different filter criteria and view and download actual message payload. End to end tracking tool stitches all the business transaction like order to cash flow and connects different hops inside ICOE like gateway, routing server, Processing server. It also connects different systems like ICOE, partner end point and SAP. Technology/Tools used \u2022 Azure Document db, Azure web job and Web APP, RBAC, Angular JS. Responsibilities \u2022 Document dB stored procedures. \u2022 Web job to process event hub data and populate Document db \u2022 Web App API. \u2022 Stream analytics job to transform data \u2022 Power BI reports 4. Biztrack Tracking Tool: Description: - This is real-time Tracking tool to track different business transactions like order, order response, functional acknowledgement, invoice flowing inside ICOE. It gives flexibility to customers to track their transactions and appropriate error information in-case of any failure. Based on resource based access control the tool gives flexibility to end user to perform different actions like view transactions, search based on different filter criteria and view and download actual message payload. Technology/Tools used \u2022 SQL server 2014, SSIS, .net API, Angular JS. Responsibilities \u2022 ETL solution to transform business transactions data stored in Biztalk tables. \u2022 SQL azure tables, stored procedures, User defined functions. \u2022 Performance tuning. \u2022 Web API enhancements. EDUCATION Saurashtra University - Morbi, Gujarat 2007 SKILLS problem solving (Less than 1 year), project lifecycle (Less than 1 year), project manager (Less than 1 year), technical assistance. (Less than 1 year) ADDITIONAL INFORMATION Professional Skills \u2022 Excellent analytical, problem solving, communication, knowledge transfer and interpersonal skills with ability to interact with individuals at all the levels \u2022 Quick learner and maintains cordial relationship with project manager and team members and good performer both in team and independent job environments \u2022 Positive attitude towards superiors &amp; peers \u2022 Supervised junior developers throughout project lifecycle and provided technical assistance."
+    ],
+    "extracurricular_activities": null
 }

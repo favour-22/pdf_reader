@@ -1,0 +1,37 @@
+{
+    "name": "Omkar Pathak SOFTWARE",
+    "age": null,
+    "skills": null,
+    "experience": [
+        {
+            "employer": "June",
+            "start_year": "2018",
+            "end_year": "2018"
+        },
+        {
+            "employer": "October",
+            "start_year": "2017",
+            "end_year": "2018"
+        },
+        {
+            "employer": "July",
+            "start_year": "2017",
+            "end_year": "2017"
+        },
+        {
+            "employer": "June",
+            "start_year": "2017",
+            "end_year": "2017"
+        },
+        {
+            "employer": "October",
+            "start_year": "2017",
+            "end_year": "2018"
+        },
+        {
+            "employer": "January",
+            "start_year": "2017",
+            "end_year": "2017"
+        }
+    ]
+}

@@ -1,20 +1,16 @@
 import spacy
-import PyPDF2
+import fitz
 import re
 import json
 
 nlp = spacy.load('en_core_web_sm')
 
 # Open the PDF file in binary mode
-with open('sample_input.pdf', 'rb') as pdf_file:
-    # Create a PDF reader object
-    pdf_reader = PyPDF2.PdfReader(pdf_file)
-
+with fitz.open('EXresume.pdf') as pdf_file:
     # Extract the text from each page of the PDF file
     text = ''
-    for page in pdf_reader.pages:
-        page = pdf_reader.pages[page_index]
-        text += page.extractText()
+    for page in pdf_file:
+        text += page.get_text()
 
     # Clean up the text
     text = ' '.join(text.split())
@@ -63,7 +59,8 @@ with open('sample_input.pdf', 'rb') as pdf_file:
         json.dump(data, json_file, indent=4)
 
     # Print the extracted information
-    print('Name:', name)
-    print('Age:', age)
-    print('Skills:', skills)
-    print('Experience:', experience)
+    json_reader = open('resume_info.json')
+    reader = json.load(json_reader)
+    json_reader.close()
+    print(reader)
+
